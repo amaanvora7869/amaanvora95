@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function shortform() {
+            // Show the name input and comment textarea
+            document.getElementById('commentSection').style.display = 'block';
+        }
+
+        function postComment() {
+            var name = document.f1.name.value;
+            var comment = document.f1.comment.value;
+            var data = "Name: " + name + "<br>Comment: " + comment;
+            document.getElementById('myLocation').innerHTML = data;
+        }
+    </script>
+</head>
+<body>
+    <form name="f1">
+        <input type="button" value="Comment" onclick="shortform()">
+        
+        <div id="commentSection" style="display:none;">
+            Name: <input type="text" name="name"><br>
+            Comment:<br>
+            <textarea name="comment" rows="5"></textarea><br>
+            <input type="button" value="Post Comment" onclick="postComment()">
+        </div>
+        
+        <div id="myLocation"></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function showform() {
+            const data = `<form>
+                FirstName: <input type="text" id="firstName" name="firstName"><br/>
+                Last Name: <input type="text" id="lastName" name="lastName">
+            </form>`;
+            document.getElementById('s1').innerHTML = data;
+        }
+    </script>
+</head>
+<body>
+    <div id="s1"></div>
+    <input type="button" value="Submit" onclick="showform()">
+</body>
+</html>

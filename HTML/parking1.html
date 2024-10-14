@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive College Parking Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="area canteen" onclick="showParking('canteen')">Canteen</div>
+        <div class="area stairs" onclick="showParking('stairs')">Stairs</div>
+        <div class="area sports" onclick="showParking('sports')">Sports</div>
+        <div class="area lab" onclick="showParking('lab')">Lab</div>
+    </div>
+    <div class="parking-area" id="parking-area">
+        <!-- Parking slots will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
